@@ -33,7 +33,7 @@ html(lang="ja")
           .col-md-6
             textarea(v-model="inputStr" placeholder="Markdownを入力" style="height: 40ex;")
           .col-md-6
-            textarea(v-model="inputStr" readonly style="height: 40ex;" v-on:click="copyTextarea")
+            textarea(v-model="outputStr" readonly style="height: 40ex;" v-on:click="copyTextarea")
     footer.container.text-right
       a(href="http://hato-neko.x0.com" target="_blank" title="ハトネコエセンター").
         ハトネコエ
