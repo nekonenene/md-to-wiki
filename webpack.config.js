@@ -121,6 +121,12 @@ const config = {
     port: 8013,
     watchContentBase: true,
   },
+
+  resolve: {
+    alias: {
+      vue: 'vue/dist/vue.js',
+    },
+  },
 };
 
 if (process.env.NODE_ENV === 'production') {
