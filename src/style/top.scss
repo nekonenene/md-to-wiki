@@ -31,3 +31,9 @@ button {
 
 // テキストの調整 small, big など
 @import "text_decoration";
+
+#app {
+  textarea {
+    width: 100%;
+  }
+}

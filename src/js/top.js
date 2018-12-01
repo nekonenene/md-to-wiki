@@ -1,18 +1,23 @@
 import Vue from 'vue';
 
-window.onload = () => {
-  $('.output').html('出力部<br>');
-  console.log('hoge');
-};
-
 new Vue({
   el: '#app',
   data: {
-    testString: 'testです',
+    inputStr: '',
+    outputStr: '',
   },
   watch: {
+    inputStr: function (str) {
+      this.outputStr = str;
+    },
   },
   created: function () {
     console.log('Hello, Vue.js');
+  },
+  methods: {
+    copyTextarea: function (ev) {
+      ev.target.select();
+      document.execCommand('copy');
+    },
   },
 });

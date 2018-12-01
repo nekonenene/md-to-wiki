@@ -14,7 +14,7 @@ html(lang="ja")
     meta(name="theme-color" content="#2b0de8")
     link(rel="icon" href="./img/favicon_192.png" sizes="192x192")
 
-    - var title = "練習ページ";
+    - var title = "Markdown to Wiki";
     title #{title}
 
     // Normalize.css
@@ -29,18 +29,13 @@ html(lang="ja")
         .container
           h1.jumbotron-heading #{title}
           p.lead.text-muted
-            | ようこそ！
+            | md2wiki
       .container#app
         .row
-          .col-md-12
-            button.btn.btn-raised.btn-primary(type="button") あお {{ testString }}
-            button.btn.btn-raised.bg-green.text-white(type="button") みどり
-            button.btn.btn-raised.bg-yellow(type="button") きいろ
-            button.btn.btn-raised.btn-danger(type="button") あか
-
-        p
-          .output
-
+          .col-md-6
+            textarea(v-model="inputStr" placeholder="Markdownを入力" style="height: 40ex;")
+          .col-md-6
+            textarea(v-model="inputStr" readonly style="height: 40ex;" v-on:click="copyTextarea")
     footer.container.text-right
       a(href="http://hato-neko.x0.com" target="_blank" title="ハトネコエセンター").
         ハトネコエ
@@ -49,7 +44,7 @@ html(lang="ja")
         (@nekonenene)
 
     //- jQuery first, then Popper.js, then Bootstrap JS
-    script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous")
     script(src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous")
     script(src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous")
     <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
