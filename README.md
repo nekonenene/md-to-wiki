@@ -10,14 +10,14 @@ Markdown 記法を Wiki 記法に変換します。
 2. 左側に Markdown を入力
 3. 右側に Wiki 記法に直したものが表示される
     <p align="center">
-        <img src="./doc/md_to_wiki.png" alt="md_to_wiki" width="380rem" height="auto">
+        <img src="./doc/md_to_wiki.png" alt="md_to_wiki" width="80%" height="auto">
     </p>
 4. Confluence で「マークアップ」の挿入を選び、「Confluence Wiki」を挿入します（画像参照）
     <p align="center">
-        <img src="./doc/insert_markup.png" alt="insert_markup" width="380rem" height="auto">
+        <img src="./doc/insert_markup.png" alt="insert_markup" width="80%" height="auto">
     </p>
     <p align="center">
-        <img src="./doc/insert_confluence_wiki.png" alt="insert_confluence_wiki" width="380rem" height="auto">
+        <img src="./doc/insert_confluence_wiki.png" alt="insert_confluence_wiki" width="80%" height="auto">
     </p>
 
 
