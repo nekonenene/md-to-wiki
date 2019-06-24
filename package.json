@@ -1,7 +1,7 @@
 {
-  "name": "template2",
+  "name": "md-to-wiki",
   "version": "0.1.0",
-  "description": "Web制作時のテンプレート",
+  "description": "Markdown to Confluence Wiki",
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build:dev": "webpack --mode development --config webpack.config.js",
