@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import marked from './marked';
 
 new Vue({
   el: '#app',
@@ -8,7 +9,7 @@ new Vue({
   },
   watch: {
     inputStr: function (str) {
-      this.outputStr = str;
+      this.outputStr = marked(str);
     },
   },
   created: function () {
